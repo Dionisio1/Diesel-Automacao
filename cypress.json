@@ -1,0 +1,7 @@
+{
+  "viewportWidth": 1366,
+  "viewportHeight": 968,
+  "baseUrl": "https://br.diesel.com/",
+  "testFiles": "**/*.feature",
+  "projectId": "h1mjve"
+}
