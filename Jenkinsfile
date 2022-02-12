@@ -1,6 +1,11 @@
 pipeline {
   agent any
     stages {
+        stage ('Clonando repositório') {
+        steps {
+            git 'https://github.com/Dionisio1/Diesel-Automacao.git'
+        }
+        }        
         stage ('Instalando dependencias') {
         steps {
             bat 'npm install'
