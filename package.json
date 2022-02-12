@@ -1,7 +1,7 @@
 {
-  "scripts":{
-    "cy-chrome":"cypress run --browser chrome",
-    "cy-firefox":"cypress run --browser firefox"
+  "scripts": {
+    "cy-chrome": "cypress run --browser chrome",
+    "cy-firefox": "cypress run --browser firefox"
   },
   "devDependencies": {
     "cypress": "^8.7.0",
@@ -9,6 +9,5 @@
   },
   "cypress-cucumber-preprocessor": {
     "step_definitions": "cypress/support/steps"
-  
   }
 }
