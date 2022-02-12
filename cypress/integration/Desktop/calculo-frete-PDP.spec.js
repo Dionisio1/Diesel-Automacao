@@ -5,31 +5,6 @@ import { get } from "lodash"
 import Elements from "../../support/pageObjects/elements"
 const elements = new Elements()
 
-/// 1.   Realizar calculo de frete na PDP
-        //Given Que esteja na pagina principal
-        //When Acessar a pagina do produto
-        //Then Devo verificar o calculo de frete
-
-/// 2. Adicionar 2 produtos diferentes no carrinho e limpar todo o carrinho
-/// 3. Fluxo de compra 
-/// ( Adicionar produto no carrinho, 
-/// navegar para o checkout,
-/// preencher informações necessárias,
-/// ir para tela de pagamentos e selecionar a opção de boleto ) 
-/// Não fechar o pedido.
-
-//---------------------desktop.home.feature------------------------
-//---------------------desktop.PDP.feature-------------------------
-//---------------------desktop.cart.feature------------------------
-//---------------------desktop.checkout.feature--------------------
-
-
-///Scenario: informando cenario gherkin
-///    Given
-///    When
-///    Then
-
-
 
 
 describe('Realizar calculo de frete na PDP',()=>{

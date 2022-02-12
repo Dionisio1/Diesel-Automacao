@@ -11,6 +11,7 @@ class Functions {
     }
 
     fechar_anuncio_newsletter(){
+        cy.wait(40000)
         cy.get(elements.x_newsletter()).click()
     }
 

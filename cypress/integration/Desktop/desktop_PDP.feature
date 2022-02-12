@@ -7,17 +7,17 @@ Feature: Desafio Qa
 
 Scenario: Realizar calculo de frete na PDP
     Given Que esteja na pagina principal
-    When Verificar o produto "Camisa Diesel S-Riley-Dart"
+    When Verificar o produto "Camisa Diesel S-Jess-Check"
     Then Devo verificar o calculo de frete
- 
+
 Scenario: Adicionar 2 produtos diferentes no carrinho e limpar todo o carrinho
     Given Que esteja na pagina principal
-    When  Adicionar o produto "Camisa Diesel S-Riley-Dart" e "Jaqueta Diesel W-On-A"
+    When  Adicionar o produto "Camisa Diesel S-Jess-Check" e "Jaqueta Diesel J-Bums"
     Then  Devo limpar todo o carrinho
  
  
 Scenario: Fluxo de compra
     Given Que esteja na pagina principal
-    When Adicionar o produto "Camisa Diesel S-Riley-Dart"
+    When Adicionar o produto "Camisa Diesel S-Jess-Check"
     Then Devo preencher dados necessários
 

@@ -5,8 +5,9 @@ const metodo = new Functions()
 
 Given(/^Que esteja na pagina principal$/, () => {
     metodo.url_home();
-    metodo.fechar_anuncio_newsletter();
     metodo.fechar_modal_cep();
+    //metodo.fechar_anuncio_newsletter();
+    
  });
 
 
