@@ -1,11 +1,6 @@
 pipeline {
   agent any
     stages {
-        stage ('Instalando dependencias') {
-            steps {
-                bat 'npm install -D cypress'
-            }
-        }
         stage ('Executando testes DESKTOP - CHROME') {
             steps {
                 bat 'npm run cy-chrome'
