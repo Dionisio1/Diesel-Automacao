@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage ('BUILD') {
             steps {
-                docker {image 'projeto-Automacao'}
+                docker { image 'projeto-Automacao' }
             }
         }        
         stage ('Instalando dependencias') {
             steps {
-                bat 'npm install -D cypress'
+                sh 'npm install -D cypress'
             }
         }
         stage ('Executando testes DESKTOP - CHROME') {
