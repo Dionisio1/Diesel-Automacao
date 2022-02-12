@@ -8,7 +8,7 @@ pipeline {
         }        
         stage ('Instalando dependencias') {
             steps {
-                sh 'npm install -D cypress'
+                bat 'npm install -D cypress'
             }
         }
         stage ('Executando testes DESKTOP - CHROME') {
