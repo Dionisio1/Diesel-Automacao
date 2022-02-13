@@ -1,9 +1,9 @@
 pipeline {
-  agent none
+  agent any
     stages {      
-        stage ('Estagio 1') {
+        stage ('Dependencias') {
             steps {
-                echo 'Primeiro Estagio'
+                sh 'npm install'
             }
         }
         stage ('Executando testes DESKTOP - CHROME') {
