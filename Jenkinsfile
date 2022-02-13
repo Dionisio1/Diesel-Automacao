@@ -3,7 +3,7 @@ pipeline {
     stages {      
         stage ('Dependencias') {
             steps {
-                sh 'npm install'
+                sh 'nvm install cypress -D'
             }
         }
         stage ('Executando testes DESKTOP - CHROME') {
