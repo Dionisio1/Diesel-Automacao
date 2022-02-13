@@ -1,25 +1,20 @@
 pipeline {
-  agent any
-    stages {
-        stage ('BUILD') {
+  agent none
+    stages {      
+        stage ('Estagio 1') {
             steps {
-                docker { image 'projeto-Automacao' }
-            }
-        }        
-        stage ('Instalando dependencias') {
-            steps {
-                bat 'npm install -D cypress'
+                echo 'Primeiro Estagio'
             }
         }
         stage ('Executando testes DESKTOP - CHROME') {
             steps {
-                bat 'npm run cy-chrome'
+                echo 'Executando DESKTOP - CHROME'
             }
         }
         stage ('Executando testes DESKTOP - FIREFOX') {
-        steps {
-            bat 'npm run cy-firefox'
-        }      
+			steps {
+				echo 'Executando testes DESKTOP - FIREFOX'
+			}      
         }
     }
 }
